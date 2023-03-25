@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework 1</title>
+    <link rel="stylesheet" href="mhw1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+</head>
+<body>
+    <a id="up" href="#titolo"><img src=" next.png" alt=""></a>
+    <nav>
+        <nav class="head-navigation">
+            <a href="#alex">Stringing</a>
+            <a href="#stringing">Warping</a>
+            <a href="#warping">Under Extrusion</a>
+            <a href="#over">Over Extrusion</a>
+            <a href="#layer">Layer shifting</a>
+            
+        </nav>
+        <div id="panino">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="panino2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <header id="titolo" class="titolo">
+        5 Problemi comuni nella Stampa 3D
+    </header>
+    <div class="profile">
+        <div>
+            <a href="https://www.instagram.com/_alexmatter/"><img class="social" src="icons8-instagram.svg" alt=""></a>
+            <a href="https://www.youtube.com/@aledo3D"><img class="social" src="icons8-youtube-logo.svg" alt=""></a>
+            <img id="alex" src="alex.jpeg" alt="">
+            <a href="https://github.com/AlexMatter1512"><img class="social" src="icons8-github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/alessio-matarazzo/"><img class="social" src="icons8-linkedin.svg" alt=""></a>
+        </div>
+        <p class="name">Alessio Matarazzo</p>
+        <p class="description">"A computer engineering student passionate about microcontrollers, 3D printing and CNC machines"</p>
+    </div>
+    <section id="articoli">
+        <section class="articolo">
+            <div>
+                <h2 id="stringing">Stringing</h2>
+                <p>
+                    Teoricamente non dovrebbe fuoriuscire 
+                    plastica dall'ugello quando non viene 
+                    applicata alcuna forza che spinge il filamento. 
+                    Tuttavia, ci possono essere momenti in cui il 
+                    materiale "fuoriesce" comunque dall'ugello, 
+                    ovviamente quando il materiale viene esposto 
+                    al calore e si scioglie.
+                </p>
+                <h3>Possibili soluzioni:</h3> 
+                <p>
+                    La maggior parte delle stampanti dispongono di una 
+                    funzione chiamata retrazione. Quando retrazione è attivata, 
+                    la stampante ritrae il filamento nell'ugello prima di spostarlo 
+                    tra le aree vuote. In questo modo, la plastica in eccesso non 
+                    può gocciolare dall'ugello e produrre quindi le stringhe.
+                </p>
+            </div>
+            
+            <img src="hairs-and-stringing-1024x1024-1.jpg" alt="">
+        </section>
+        <section class="articolo">
+            <div>
+                <h2 id="warping">Warping</h2>
+                <p>
+                    Il warping è un problema comune che può 
+                    verificarsi durante la stampa 3D. 
+                    Si verifica quando le estremità del modello 
+                    si piegano o si deformano durante il processo 
+                    di stampa, rendendo il risultato finale 
+                    imperfetto e non conforme alle specifiche 
+                    desiderate.
+                    Il warping è un problema di stampa 3D molto 
+                    comune e facile da riconoscere: il modello in 
+                    stampa presenta deformazioni nei primi layer di
+                     stampa, con angoli e superfici distaccate dal 
+                     piano. Una delle principali cause di warping 
+                     è la contrazione termica: quando il materiale 
+                     viene raffreddato rapidamente, si ritira e può
+                      causare la deformazione del modello.
+                </p>
+            </div>
+            
+            <img src="warping-1024x1024-1.jpg" alt="">
+        </section>
+        <section class="articolo">
+            <div>
+                <h2 id="under">Under Extruding</h2>
+                <p>
+                    La sotto-estrusione è quando la stampante non è 
+                    in grado di fornire il materiale necessario 
+                    (o abbastanza velocemente). La sotto-estrusione 
+                    causa strati troppo sottili, strati con indesiderate 
+                    lacune, o strati del tutto mancanti. <br>
+                    <h3>Ci sono diverse possibili cause:</h3>
+                    <ul>
+                        <li>Il diametro del filamento utilizzato non corrisponde al diametro impostato nel software di taglio</li>
+                        <li>La quantità di materiale che viene estruso non e' sufficiente a causa delle impostazioni sbagliate del software di taglio.</li>
+                        <li>Il flusso del materiale attraverso l'estrusore è limitato da sporcizia nell'ugello.</li>
+                    </ul> 
+                </p>
+            </div>
+            
+            <img src="under-extruding.jpg" alt="">
+        </section>
+        <section class="articolo">
+            <div>
+                <h2 id="over">Over Extruding</h2>
+                <p>
+                    Sovra-estrusione significa che la stampante fornisce più materiale del necessario. Ciò si traduce in materiale in eccesso all'esterno del modello stampato.
+                    <h3>Qual e' la causa?</h3>
+                </p>
+                <p>
+                    In genere, il valore del moltiplicatore di estrusione o Flow setting nel software di taglio è troppo alta
+                </p>
+            </div>
+            
+            <img src="over-extruding-1024x1024-1.jpg" alt="">
+        </section>
+        <section class="articolo">
+            <div>
+                <h2 id="layer">Layer shifting</h2>
+                <p>
+                    Lo slittamento del layer (layer shifting) è un problema 
+                    comune che riguarda soprattutto i componenti meccanici della stampante.
+                </p>
+                <p>
+                    Questo problema di stampa si verifica quando gli strati 
+                    della vostra stampa si spostano verso i lati, 
+                    creando un aspetto a scale. Può accadere in un solo punto 
+                    della vostra stampa o lungo tutto l'asse Z. Un leggero spostamento 
+                    degli strati renderà i layer "glitchati", ma se il problema è più grave, 
+                    può indurre la testina a stampare a mezz'aria, 
+                    lasciando un groviglio di filamento nel volume di stampa.
+                </p>
+            </div>
+            
+            <img src="layer-shifting-1024x1024-1.jpg" alt="">
+        </section>
+    </section>
+    <footer id="footer">
+        <span>Alessio Matarazzo <br> matricola: 1000020516</span>
+        <span>Corso: Web-Programming 2023 <br>Docente: Concetto Spampinato</span>
+    </footer>
+    
+</body>
+</html>

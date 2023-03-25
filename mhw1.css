@@ -1,0 +1,232 @@
+:root {
+    --scuro: #000000;
+    --highlight1: #d85d79;
+    --highlight2: #e1ae90;
+    --highlight2_dark: #765a4aae;
+  }
+
+#up{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#up img{
+    height: 40px;
+    width: 40px;
+}
+#up img:hover{filter: grayscale(100%) brightness(300%);}
+
+#panino {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+#panino2 {
+    display: none;
+    position: fixed;
+    top: 14px;
+    right: 6px;
+}
+
+#panino div, #panino2 div{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+}
+#panino2 div{background-color: var(--highlight2_dark);}
+
+body{
+    margin: 0px;
+    margin-top: 60px;
+    background:var(--scuro);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.head-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--scuro);
+    padding: 15px;
+    /*position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.head-navigation a{
+    color: var(--highlight2);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 5px;
+    border-radius: 5px;
+    /*border: solid 2px var(--highlight2_dark);*/
+}
+.head-navigation a:hover{
+    background-color: var(--highlight2_dark);
+    color: white;
+}
+
+header.titolo{
+    font-size: 100px;
+    font-family: 'Delicious Handrawn', sans-serif;
+    text-shadow: 5px 5px var(--highlight2_dark);
+    text-align: center; 
+    color: white;
+    background: url(christian-englmeier-drTIJgAc58w-unsplash.jpg), var(--scuro);;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 500px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    display: inline-block;
+    width: 150px;
+    margin-top: -75px;
+    border: 5px solid var(--highlight2_dark);
+    border-radius: 100%;
+}
+.profile .social{
+    display: inline-block;
+    width: 40px;
+    margin-top: -75px;
+    border: 0px;
+}
+
+.profile .name{
+    color: white;
+    font-weight: 700;
+}
+
+.profile .description{
+    margin-top: -10px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    color: white;
+}
+
+#articoli{
+    display: flex;
+    /*background-color: white;*/
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.articolo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--highlight2_dark);
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.articolo img{
+    max-height: 100%;
+    max-width: 50%;
+    border-radius: 25px;
+}
+
+.articolo div{
+    height: 100%;
+    padding: 15px;
+}
+
+.articolo div p{
+    color: white;
+    /*background-color: aqua;*/
+    font-size: larger;
+}
+.articolo div h2{
+    font-weight: 600;
+    color: var(--highlight2);
+    text-align: center;
+}
+.articolo div h3{
+    font-weight: 600;
+    color: white;
+    margin-bottom: -15px;
+}
+.articolo ul{
+    font-size: larger;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    height: 50px;
+    background: linear-gradient(var(--scuro), var(--highlight2_dark));
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#footer span{
+    margin: 10px;
+}
+@media screen and (max-width: 1000px){
+    header.titolo {
+        font-size: 80px;
+    }
+    .articolo{
+        flex-direction: column;
+    }
+    .articolo img{
+        max-width: 100%;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 600px){
+    header.titolo {
+        font-size: 65px;
+    }
+    .head-navigation{
+        display: none;
+    }
+    #panino, #panino2{
+        display: block;
+    }
+    #articoli{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .articolo{
+        flex-direction: column;
+    }
+    .articolo img{
+        max-width: 100%;
+        border-radius: 25px;
+    }
+    #footer{
+        justify-content:flex-start;
+    }
+    body{
+        margin-top: 0px;
+    }
+}
